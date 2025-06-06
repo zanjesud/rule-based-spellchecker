@@ -1,0 +1,7 @@
+Rule Name			Example Sentence (with error)					Expected Correction
+ie/ei Rule			I always recieve gifts on my birthday.			I always receive gifts on my birthday.
+Double Consonant	Please accomodate my request.					Please accommodate my request.
+Common Mistake		We must seperate the waste properly.			We must separate the waste properly.
+Silent 'e'			The arguement was very convincing.				The argument was very convincing.
+Prefix Rule			It's easy to mispell difficult words.			It's easy to misspell difficult words.
+Suffix Rule			The goverment announced new policies.			The government announced new policies.

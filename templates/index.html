@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule-Based Spellchecker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head><body>
+    <div class="container">
+        <h1>Rule-Based Spellchecker</h1>
+        
+        <!-- Rule Selection -->
+        <div class="card">
+            <h2>Select Spelling Rules</h2> 
+            <div id="rule-container" class="rule-container"></div>           
+            <button id="select-all">Select All</button>
+            <button id="deselect-all">Deselect All</button>
+            
+        </div>
+
+        <!-- Mode Toggle Bar -->
+        <div class="card" style="padding: 12px 20px 12px 20px;">
+            <div id="mode-toggle" style="display: flex; gap: 18px; justify-content: center;">
+                <button id="mode-text" class="mode-btn selected">Enter Text</button>
+                <button id="mode-file" class="mode-btn">Upload File</button>
+            </div>
+        </div>
+        
+            <!-- Text Input -->
+        <div class="card" id="text-section">
+            <h2>Enter Text</h2>
+            <textarea id="input-text" placeholder="Type or paste text here..."></textarea>
+            <button id="check-btn">Check Spelling</button>
+            <button id="export-btn">Export Results</button>
+        </div>
+
+        <!-- File Upload -->
+        <div class="card" id="file-section" style="display: none;">
+            <h2>Upload Text File</h2>
+            <input type="file" id="file-upload" accept=".txt">
+            <button id="upload-btn">Process File</button>
+            <button id="export-btn">Export Results</button>
+            <span id="file-error" style="color: red; display: none;"></span>
+            <span id="filenm" class="file-info"></span>
+        </div>
+                
+        <!-- Results Display -->
+        <div class="card">
+            <h2>Results</h2>
+            <div id="results">
+                <div class="stats">
+                    <p>Total Errors: <span id="error-count">0</span></p>
+                    <div id="error-types"></div>
+                </div>
+                <div class="text-container">
+                    <h3>Original Text</h3>
+                    <div id="original-text" class="text-display"></div>
+                    <h3>Corrected Text</h3>
+                    <div id="corrected-text" class="text-display"></div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

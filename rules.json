@@ -1,0 +1,34 @@
+{
+    "rules": [
+        {
+            "name": "ie/ei Rule",
+            "pattern": "recieve",
+            "correction": "receive"
+        },
+        {
+            "name": "Double Consonant",
+            "pattern": "accomodate",
+            "correction": "accommodate"
+        },
+        {
+            "name": "Common Mistake",
+            "pattern": "seperate",
+            "correction": "separate"
+        },
+        {
+            "name": "Silent 'e'",
+            "pattern": "arguement",
+            "correction": "argument"
+        },
+        {
+            "name": "Prefix Rule",
+            "pattern": "mispell",
+            "correction": "misspell"
+        },
+        {
+            "name": "Suffix Rule",
+            "pattern": "goverment",
+            "correction": "government"
+        }        
+    ]
+}

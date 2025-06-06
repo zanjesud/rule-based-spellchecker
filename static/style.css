@@ -1,0 +1,286 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --secondary: #334155;
+    --success: #22c55e;
+    --danger: #ef4444;
+    --light: #f1f5f9;
+    --dark: #0f172a;
+    --card-bg: #fff;
+    --shadow: 0 4px 24px rgba(30, 64, 175, 0.08);
+    --radius: 14px;
+    --transition: 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: var(--secondary);
+    background: linear-gradient(120deg, #f1f5f9 0%, #e0e7ef 100%);
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 36px 28px 28px 28px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: var(--primary-dark);
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--secondary);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.card {
+    background: var(--light);
+    border-radius: var(--radius);
+    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.06);
+    padding: 24px 20px 18px 20px;
+    margin-bottom: 28px;
+    transition: box-shadow var(--transition);
+}
+
+.card:hover {
+    box-shadow: 0 8px 32px rgba(30, 64, 175, 0.13);
+}
+
+.rule-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    justify-content: flex-start; /* stretch horizontally */
+    align-items: center;
+}
+
+.rule, .rule-btn {
+    background: var(--card-bg, #fff);
+    color: var(--primary-dark, #1e40af);
+    border: 1.2px solid var(--primary, #2563eb);
+    border-radius: 16px;
+    padding: 4px 14px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, border 0.18s, box-shadow 0.18s;
+    margin-bottom: 4px;
+    box-shadow: 0 1px 3px rgba(30, 64, 175, 0.03);
+    font-weight: 500;
+    outline: none;
+    min-width: 90px;
+    min-height: 32px;
+    margin-right: 0;
+}
+
+.rule.selected, .rule-btn.selected, .rule:hover, .rule-btn:hover {
+    background: var(--primary, #2563eb);
+    color: #fff;
+    border-color: var(--primary-dark, #1e40af);
+    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.10);
+}
+
+textarea {
+    width: 100%;
+    min-height: 110px;
+    border-radius: 8px;
+    border: 1.5px solid #cbd5e1;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    resize: vertical;
+    background: #f8fafc;
+    transition: border var(--transition), box-shadow var(--transition);
+    box-shadow: 0 1px 4px rgba(30, 64, 175, 0.03);
+}
+
+textarea:focus {
+    border: 1.5px solid var(--primary);
+    outline: none;
+    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.10);
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: none;
+    background: none;
+}
+
+#file-error {
+    color: var(--danger);
+    font-size: 1rem;
+    margin-left: 12px;
+    font-weight: 500;
+    display: inline;
+}
+
+.file-info {
+    background: #e0f2fe;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: var(--primary-dark);
+    box-shadow: 0 1px 4px rgba(30, 64, 175, 0.04);
+}
+
+.file-info p {
+    margin: 0;
+}
+
+button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
+    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.06);
+}
+
+button:hover, button:focus {
+    background: var(--primary-dark);
+    box-shadow: 0 4px 16px rgba(30, 64, 175, 0.13);
+    transform: translateY(-2px) scale(1.03);
+}
+
+#export-btn, #upload-btn {
+    background: var(--success);
+}
+
+#export-btn:hover, #upload-btn:hover {
+    background: #16a34a;
+}
+
+.text-display {
+    border: 1px solid #e0e7ef;
+    border-radius: 8px;
+    padding: 14px;
+    min-height: 60px;
+    font-size: 1.08rem;
+    background: #f8fafc;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-top: 6px;
+    transition: box-shadow var(--transition);
+    box-shadow: 0 1px 4px rgba(30, 64, 175, 0.03);
+}
+
+.stats {
+    background: #f1f5f9;
+    padding: 15px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    color: var(--primary-dark);
+    box-shadow: 0 1px 4px rgba(30, 64, 175, 0.03);
+}
+
+#error-count {
+    font-weight: 700;
+    color: var(--danger);
+}
+
+.error-highlight {
+    background-color: #fee2e2;
+    color: var(--danger);
+    border-radius: 4px;
+    padding: 1px 4px;
+    font-weight: 600;
+    transition: background var(--transition);
+    border-bottom: 2px dashed var(--danger);
+    cursor: pointer;
+    position: relative;
+}
+
+.error-highlight:hover::after {
+    content: attr(data-correction);
+    position: absolute;
+    background: var(--dark);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 100;
+    font-size: 0.98rem;
+    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.13);
+}
+.mode-btn {
+    background: #e0e7ef;
+    color: #2563eb;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 28px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-bottom: 0;
+}
+.mode-btn.selected, .mode-btn:hover {
+    background: #2563eb;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 10px 2vw;
+    }
+    .card {
+        padding: 12px 6px 10px 6px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    button {
+        padding: 7px 12px;
+        font-size: 0.95rem;
+    }
+    .text-display {
+        font-size: 0.98rem;
+        padding: 8px;
+    }
+}
