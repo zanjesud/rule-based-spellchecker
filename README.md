@@ -1,4 +1,13 @@
 # Rule-Based Spellchecker Application
+# Rule-Based Spellchecker Web App
+
+This is a web application that allows users to check and correct spelling errors in text using customizable rule-based patterns. Users can input text directly or upload a file, select which spelling rules to apply, and view both the original and corrected text along with detailed error statistics.
+
+## Features
+- Rule-based spellchecking
+- File upload and text input
+- Error highlighting and correction
+- Export corrected text
 
 ## Setup Instructions
 
