@@ -2,33 +2,64 @@
     "rules": [
         {
             "name": "ie/ei Rule",
-            "pattern": "recieve",
-            "correction": "receive"
+            "pattern": "\\brecieve\\b|\\bseige\\b|\\bceiling\\b|\\bdeceive\\b|\\bperceive\\b|\\breceipt\\b|\\bconceive\\b|\\bprotein\\b|\\bweird\\b|\\bneither\\b|\\bheight\\b|\\bforeign\\b|\\btheir\\b|\\bscience\\b|\\bancient\\b|\\befficient\\b|\\bspecies\\b|\\bneighbor\\b|\\bveil\\b|\\bvein\\b|\\brein\\b|\\bbeige\\b|\\bcaffeine\\b|\\bcounterfeit\\b|\\bfeign\\b|\\bheir\\b|\\bleisure\\b|\\bseismic\\b|\\bsleigh\\b|\\bsurfeit\\b|\\btransceiver\\b|\\bweight\\b|\\byield\\b|\\bpiece\\b|\\bchief\\b|\\bshield\\b|\\bthief\\b|\\bbelief\\b|\\bbrief\\b|\\bfield\\b|\\bgrief\\b|\\brelief\\b|\\bshriek\\b|\\bsiege\\b|\\btier\\b|\\bview\\b|\\bachieve\\b|\\bfriend\\b|\\bpriest\\b",
+            "corrections": [
+                "receive", "ceiling", "deceive", "perceive", "receipt", "conceive", "protein", "seize", "weird", "either",
+                "neither", "height", "foreign", "their", "science", "ancient", "efficient", "species", "neighbor", "veil",
+                "vein", "rein", "beige", "caffeine", "counterfeit", "feign", "heir", "leisure", "seismic", "sleigh",
+                "surfeit", "transceiver", "weight", "yield", "piece", "chief", "shield", "thief", "belief", "brief",
+                "field", "grief", "relief", "shriek", "siege", "tier", "view", "achieve", "friend", "priest"
+            ]
         },
         {
-            "name": "Double Consonant",
-            "pattern": "accomodate",
-            "correction": "accommodate"
+            "name": "Double Consonant Rule",
+            "pattern": "\\baccomodate\\b|\\baddress\\b|\\bcommittee\\b|\\bembarrass\\b|\\boccasion\\b|\\bnecessary\\b|\\bsuccess\\b|\\baccess\\b|\\baggressive\\b|\\bapparent\\b|\\bballet\\b|\\bbarricade\\b|\\bbitter\\b|\\bcabbage\\b|\\bcollect\\b|\\bconnect\\b|\\bdifficult\\b|\\beffect\\b|\\bfitted\\b|\\bgallop\\b|\\bhappen\\b|\\bimmediate\\b|\\bjogging\\b|\\bkettle\\b|\\bletter\\b|\\bmanner\\b|\\bmattress\\b|\\boccur\\b|\\bopposite\\b|\\bpossess\\b|\\brabbit\\b|\\brecommend\\b|\\bsucceed\\b|\\bsuppose\\b|\\btomorrow\\b|\\bunnecessary\\b|\\bvacuum\\b|\\bwedding\\b|\\byell\\b|\\ballotted\\b|\\bapplause\\b",
+            "corrections": [
+                "accommodate", "address", "committee", "embarrass", "occasion", "necessary", "success", "access", "aggressive", "apparent",
+                "ballet", "barricade", "bitter", "cabbage", "collect", "connect", "difficult", "effect", "fitted", "gallop",
+                "happen", "immediate", "jogging", "kettle", "letter", "manner", "mattress", "occur", "opposite", "possess",
+                "rabbit", "recommend", "succeed", "suppose", "tomorrow", "unnecessary", "vacuum", "wedding", "yell", "addressed",
+                "allotted", "applause"
+            ]
         },
         {
-            "name": "Common Mistake",
-            "pattern": "seperate",
-            "correction": "separate"
-        },
-        {
-            "name": "Silent 'e'",
-            "pattern": "arguement",
-            "correction": "argument"
+            "name": "Silent e Rule",
+            "pattern": "\\barguement\\b|\\bcake\\b|\\bcacke\\b|\\bnot\\b|\\brote\\b|\\bmope\\b|\\bcope\\b|\\bhope\\b|\\bshape\\b|\\bgrape\\b|\\bdrape\\b|\\bscape\\b|\\btrape\\b",
+            "corrections": [
+                "argument", "bake", "cake", "make", "take", "rake", "lake", "fake", "brake", "shake", "stake",
+                "bike", "like", "hike", "pike", "spike", "strike", "write", "bite", "kite", "site",
+                "white", "quite", "invite", "note", "vote", "quote", "remote", "rote", "cute", "mute",
+                "route", "flute", "chute", "cube", "tube", "globe", "robe", "probe", "hope", "cope",
+                "rope", "mope", "slope", "tape", "shape", "grape", "drape", "scape", "trape"
+            ]
         },
         {
             "name": "Prefix Rule",
-            "pattern": "mispell",
-            "correction": "misspell"
+            "pattern": "\\bmispell\\b|\\bunhappy\\b|\\breapply\\b|\\bmisunderstand\\b|\\bmisplace\\b|\\bmislead\\b|\\bmisbehave\\b|\\bmisjudge\\b|\\bmisuse\\b|\\bmisprint\\b|\\bmisread\\b|\\bmisfit\\b|\\bdisagree\\b|\\bdisappear\\b|\\bdisapprove\\b|\\bdisarm\\b|\\bdisband\\b|\\bdisbelief\\b|\\bdisconnect\\b|\\bdislike\\b|\\bdisobey\\b|\\bdisorder\\b|\\breappear\\b|\\breapply\\b|\\brearrange\\b|\\brebuild\\b|\\brecall\\b|\\brecharge\\b|\\brecheck\\b|\\brecycle\\b|\\bredo\\b|\\breenter\\b|\\breform\\b|\\brefresh\\b|\\bregain\\b|\\bregrow\\b|\\brehire\\b|\\brejoin\\b|\\brelive\\b|\\bremake\\b|\\bremove\\b|\\brenew\\b",
+            "corrections": [
+                "misspell", "misunderstand", "misplace", "mislead", "misbehave", "misjudge", "misuse", "misprint", "misread", "misfit",
+                "disagree", "disappear", "disapprove", "disarm", "disband", "disbelief", "disconnect", "dislike", "disobey", "disorder",
+                "unhappy", "unusual", "unfair", "unfit", "unfold", "unfriendly", "unlucky", "unpack", "unplug", "unrest",
+                "reappear", "reapply", "rearrange", "rebuild", "recall", "recharge", "recheck", "recycle", "redo", "reenter",
+                "reform", "refresh", "regain", "regrow", "rehire", "rejoin", "relive", "remake", "remove", "renew"
+            ]
         },
         {
             "name": "Suffix Rule",
-            "pattern": "goverment",
-            "correction": "government"
-        }        
+            "pattern": "\\bgoverment\\b|\\bstatment\\b|\\bkindness\\b|\\bmovement\\b|\\benjoyment\\b|\\bagreement\\b|\\bdevelopment\\b|\\bmanagement\\b|\\breplacement\\b|\\bshipment\\b|\\btreatment\\b|\\baction\\b|\\bcaution\\b|\\bdirection\\b|\\beducation\\b|\\bfiction\\b|\\bfunction\\b|\\bmention\\b|\\bnation\\b|\\boption\\b|\\bquestion\\b|\\bexpansion\\b|\\bdecision\\b|\\bconfusion\\b|\\boccasion\\b|\\bpermission\\b|\\bprecision\\b|\\bprovision\\b|\\bsession\\b|\\btension\\b|\\bvision\\b|\\bhappiness\\b|\\bdarkness\\b|\\bsadness\\b|\\bweakness\\b|\\billness\\b|\\bfitness\\b|\\bbusiness\\b|\\bwitness\\b|\\bmadness\\b|\\bcareless\\b|\\bhopeless\\b|\\buseless\\b|\\bfearless\\b|\\brestless\\b|\\bthoughtless\\b|\\bendless\\b|\\bharmless\\b|\\btireless\\b|\\bpriceless\\b",
+            "corrections": [
+                "government", "movement", "enjoyment", "agreement", "statement", "development", "management", "replacement", "shipment", "treatment",
+                "action", "caution", "direction", "education", "fiction", "function", "mention", "nation", "option", "question",
+                "expansion", "decision", "confusion", "occasion", "permission", "precision", "provision", "session", "tension", "vision",
+                "happiness", "kindness", "darkness", "sadness", "weakness", "illness", "fitness", "business", "witness", "madness",
+                "careless", "hopeless", "useless", "fearless", "restless", "thoughtless", "endless", "harmless", "tireless", "priceless"
+            ]
+        },
+        {
+            "name": "dictionary",
+            "description": "Check spelling using dictionary-based spell checker",
+            "pattern": "",
+            "corrections": []
+        }
     ]
 }

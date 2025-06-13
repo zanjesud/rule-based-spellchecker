@@ -1,7 +1,54 @@
-Rule Name			Example Sentence (with error)					Expected Correction
-ie/ei Rule			I always recieve gifts on my birthday.			I always receive gifts on my birthday.
-Double Consonant	Please accomodate my request.					Please accommodate my request.
-Common Mistake		We must seperate the waste properly.			We must separate the waste properly.
-Silent 'e'			The arguement was very convincing.				The argument was very convincing.
-Prefix Rule			It's easy to mispell difficult words.			It's easy to misspell difficult words.
-Suffix Rule			The goverment announced new policies.			The government announced new policies.
+# Example Sentences for Rule-Based Spellchecker
+
+## 1. ie/ei Rule
+"I always recieve gifts on my birthday."      # should be 'receive'
+"The ceiling is very high."                   # correct
+"He tried to decieve his friends."            # should be 'deceive'
+
+## 2. Double Consonant Rule
+"We need to accomodate more people in the hall."   # should be 'accommodate'
+"The adress on the envelope was incorrect."        # should be 'address'
+"She was embarassed by her mistake."               # should be 'embarrassed'
+
+## 3. Silent 'e' Rule
+"The arguement lasted for hours."             # should be 'argument'
+"He will bake a cacke for the party."         # should be 'cake'
+"She wrote a not to her friend."              # should be 'note'
+
+## 4. Prefix Rule
+"He tends to mispell common words."           # should be 'misspell'
+"She was unhappy with the results."           # correct
+"They decided to reapply for the job."        # correct
+
+## 5. Suffix Rule
+"The goverment announced new policies."       # should be 'government'
+"He made a statment during the meeting."      # should be 'statement'
+"Her kindness was appreciated by everyone."   # correct
+
+## 6. Dictionary (General Spellcheck)
+"I love proggraming in Pythn."                # should be 'programming', 'Python'
+"This is a smple text with som misspeled words." # should be 'simple', 'some', 'misspelled'
+"The comittee will meet tomorow."             # should be 'committee', 'tomorrow'
+
+
+
+Please use below plaintext for better results 
+
+I always recieve gifts on my birthday.
+The ceiling is very high.
+He tried to decieve his friends.
+We need to accomodate more people in the hall.
+The adress on the envelope was incorrect.
+She was embarassed by her mistake.
+The arguement lasted for hours.
+He will bake a cacke for the party.
+She wrote a not to her friend.
+He tends to mispell common words.
+She was unhappy with the results.
+They decided to reapply for the job.
+The goverment announced new policies.
+He made a statment during the meeting.
+Her kindness was appreciated by everyone.
+I love proggraming in Pythn.
+This is a smple text with som misspeled words.
+The comittee will meet tomorow.
