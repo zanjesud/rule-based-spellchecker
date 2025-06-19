@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkBtn = document.getElementById('check-btn');
     const uploadBtn = document.getElementById('upload-btn');
     const exportBtn = document.getElementById('export-btn');
+    const exportBtnfile = document.getElementById('export-file-btn');
     const ruleContainer = document.getElementById('rule-container');
     const originalTextDisplay = document.getElementById('original-text');
     const correctedTextDisplay = document.getElementById('corrected-text');
@@ -72,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     checkBtn.addEventListener('click', processText);
     uploadBtn.addEventListener('click', processFile);
     exportBtn.addEventListener('click', exportText);
+    exportBtnfile.addEventListener('click', exportText)
     
     selectAllBtn.addEventListener('click', () => {
         selectedRules = new Set(rules.map(r => r.name));
